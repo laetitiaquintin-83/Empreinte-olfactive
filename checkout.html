@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Empreinte Olfactive | Commande</title>
+    <meta name="description" content="Finalisez votre commande de flacons L'Empreinte Olfactive.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="index.html">
+    <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+    <span class="brand-text">L'Empreinte Olfactive</span>
+</a>
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="fragrance.html">Fragrances</a>
+                <a href="collection.html">Collection</a>
+                <a href="panier.html" class="nav-cart-link">Panier <span class="cart-count" data-cart-count>0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="section-head">
+            <p class="eyebrow">Validation</p>
+            <h1>Finaliser votre commande</h1>
+            <p>Ce tunnel est une simulation pedagogique sans transaction bancaire reelle.</p>
+        </div>
+
+        <section class="checkout-layout">
+            <form class="checkout-form" data-checkout-form>
+                <fieldset class="checkout-fieldset">
+                    <legend>Coordonnees</legend>
+                    <div class="checkout-grid">
+                        <p class="field"><label for="prenom">Prenom</label><input id="prenom" name="prenom" required></p>
+                        <p class="field"><label for="nom">Nom</label><input id="nom" name="nom" required></p>
+                        <p class="field full"><label for="email">Email</label><input id="email" name="email" type="email" required></p>
+                        <p class="field full"><label for="telephone">Telephone</label><input id="telephone" name="telephone" required></p>
+                    </div>
+                </fieldset>
+
+                <fieldset class="checkout-fieldset">
+                    <legend>Livraison</legend>
+                    <div class="checkout-grid">
+                        <p class="field full"><label for="adresse">Adresse</label><input id="adresse" name="adresse" required></p>
+                        <p class="field"><label for="cp">Code postal</label><input id="cp" name="cp" required></p>
+                        <p class="field"><label for="ville">Ville</label><input id="ville" name="ville" required></p>
+                        <p class="field full"><label for="pays">Pays</label><select id="pays" name="pays" required><option value="">Selectionner</option><option>France</option><option>Belgique</option><option>Suisse</option><option>Luxembourg</option></select></p>
+                        <p class="field full"><label for="notes">Instructions</label><textarea id="notes" name="notes" placeholder="Code porte, etage, precision de remise..."></textarea></p>
+                    </div>
+                </fieldset>
+
+                <p class="checkout-note">En confirmant, vous acceptez les <a href="cgv.html">CGV</a>.</p>
+                <p><button class="btn" type="submit">Confirmer la commande</button></p>
+            </form>
+
+            <aside class="cart-panel">
+                <h2>Recapitulatif</h2>
+                <p class="cart-empty" data-checkout-gate hidden>Votre panier est vide. Retournez a la collection avant de valider.</p>
+                <div class="summary-list" data-checkout-list></div>
+                <p class="cart-summary-row"><span>Sous-total</span><strong data-checkout-subtotal>0,00 EUR</strong></p>
+                <p class="cart-summary-row"><span>Livraison</span><strong>Offerte</strong></p>
+                <p class="cart-summary-row total"><span>Total</span><strong data-checkout-total>0,00 EUR</strong></p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <section class="footer-col"><h3>L'Empreinte Olfactive</h3><p>Haute parfumerie narrative et boutique emotionnelle.</p></section>
+            <section class="footer-col"><h4>Boutique</h4><ul><li><a href="collection.html">Flacons et editions</a></li><li><a href="fragrance.html">Univers olfactifs</a></li><li><a href="panier.html">Panier</a></li></ul></section>
+            <section class="footer-col"><h4>Service Client</h4><ul><li><a href="mailto:maison@empreinte-olfactive.fr">maison@empreinte-olfactive.fr</a></li><li>Livraison 48h France metropolitaine</li><li>Paiement securise (simulation)</li></ul></section>
+            <section class="footer-col"><h4>Informations</h4><ul><li><a href="mentions-legales.html">Mentions legales</a></li><li><a href="politique-confidentialite.html">Confidentialite</a></li><li><a href="cgv.html">CGV</a></li></ul></section>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 L'Empreinte Olfactive</p>
+            <div class="footer-legal-links"><a href="mentions-legales.html">Mentions legales</a><a href="politique-confidentialite.html">Politique de confidentialite</a><a href="cgv.html">CGV</a></div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

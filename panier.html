@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Empreinte Olfactive | Panier</title>
+    <meta name="description" content="Consultez et validez votre panier de flacons et editions olfactives.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="site-nav-inner">
+            <a class="brand" href="index.html">
+    <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+    <span class="brand-text">L'Empreinte Olfactive</span>
+</a>
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="fragrance.html">Fragrances</a>
+                <a href="collection.html">Collection</a>
+                <a href="panier.html" class="nav-cart-link active">Panier <span class="cart-count" data-cart-count>0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="section-head">
+            <p class="eyebrow">Boutique</p>
+            <h1>Votre Panier</h1>
+            <p>Composez votre selection avant validation. Le paiement est une simulation pour la demo.</p>
+        </div>
+
+        <section class="cart-layout">
+            <article class="cart-panel">
+                <h2>Articles</h2>
+                <div class="cart-empty" data-cart-empty>Votre panier est vide. Retournez dans la collection pour ajouter des flacons.</div>
+                <div class="cart-list" data-cart-list></div>
+            </article>
+
+            <aside class="cart-panel">
+                <h2>Resume</h2>
+                <p class="cart-summary-row"><span>Sous-total</span><strong data-subtotal>0,00 EUR</strong></p>
+                <p class="cart-summary-row"><span>Livraison</span><strong>Offerte</strong></p>
+                <p class="cart-summary-row total"><span>Total</span><strong data-total>0,00 EUR</strong></p>
+                <p>
+                    <a class="btn" href="checkout.html" data-checkout-link>Passer commande</a>
+                </p>
+                <p>
+                    <button class="btn btn-soft" type="button" data-clear-cart>Vider le panier</button>
+                </p>
+                <p>Mode demonstration: aucune transaction réelle n'est effectuee.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <section class="footer-col">
+                <h3>L'Empreinte Olfactive</h3>
+                <p>Haute parfumerie narrative et boutique emotionnelle.</p>
+            </section>
+            <section class="footer-col">
+                <h4>Boutique</h4>
+                <ul>
+                    <li><a href="collection.html">Flacons et editions</a></li>
+                    <li><a href="fragrance.html">Univers olfactifs</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Service Client</h4>
+                <ul>
+                    <li><a href="mailto:maison@empreinte-olfactive.fr">maison@empreinte-olfactive.fr</a></li>
+                    <li>Livraison 48h France metropolitaine</li>
+                    <li>Paiement securise (simulation)</li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions legales</a></li>
+                    <li><a href="politique-confidentialite.html">Confidentialite</a></li>
+                    <li><a href="cgv.html">CGV</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 L'Empreinte Olfactive</p>
+            <div class="footer-legal-links">
+                <a href="mentions-legales.html">Mentions legales</a>
+                <a href="politique-confidentialite.html">Politique de confidentialite</a>
+                <a href="cgv.html">CGV</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
